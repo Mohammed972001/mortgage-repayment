@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <!-- displays site properly based on user's device -->
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="stayle.css">
+
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style> -->
+</head>
+
+<body  >
+  <div class="holder">
+    <div class="cont">
+
+      <div class="rightSection">
+        <div class="header">
+          <h1>Mortgage calculator</h1>
+          <button id="clearbtn" class="clear" onclick="handelClearbtn()">clear All</button>
+        </div>
+        <div class="form-group">
+          <label for="Amont" class="formLabel">Mortgage Amont</label>
+          <div class="inbut">
+            <span class="currency-symbol">£</span>
+            <input type="text" id="Amont" required>
+          </div>
+  
+        </div>
+        <div class="term">
+          <div class="form-group">
+            <label for="Mortgage-term" class="formLabel">Mortgage term</label>
+            <div class="inbut">
+              <input type="text" id="Mortgage-term" required>
+              <span class="currency-symbol">years</span>
+            </div>
+  
+          </div class="inbut">
+          <div class="form-group">
+            <label for="InterestRate" class="formLabel">InterestRate</label>
+            <div class="inbut">
+              <input type="text" id="InterestRate" required>
+              <span class="currency-symbol">%</span>
+            </div>
+  
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label class="formLabel">Mortgage taype</label>
+          <div class="query-type">
+            <div class="option">
+              <input type="radio" id="repayment" class="" name="query-type" value="repayment">
+              <label for="repayment">Repayment</label>
+            </div>
+            <div class="option">
+              <input type="radio" id="Interest Only" name="query-type" value="Interest Only">
+              <label for="Interest-Only">Interest Only</label>
+            </div>
+          </div>
+        </div>
+        <div class="calcvbtn">
+  
+          <button id="CalculateBtn" class="btn" onclick="handelCalculate()">
+            <i class="fa-solid fa-calculator"></i>
+            Calculate Repayments</button>
+  
+        </div>
+  
+  
+  
+      </div>
+      
+    </div>
+    <div class="leftSection">
+  
+        <div>
+          <img src="assets/images/illustration-empty.svg" alt="">
+        </div>
+  
+        <div>
+          <h3>
+            Results shown here
+          </h3>
+        </div>
+        
+        <div>
+          <h4>Complete the form and click "Calculate repayments" to
+            see what you monthly repayments would be.
+          </h4>
+        </div>
+  
+  
+  
+      </div>
+  
+    </div>
+  </div>
+  
+ 
+
+
+
+
+  <Script src="main.js"></Script>
+</body>
+
+</html>
